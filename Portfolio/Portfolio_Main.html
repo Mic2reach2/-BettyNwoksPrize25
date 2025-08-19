@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>My Portfolio-T.H Tech & Repairs</title>
+    <script src="https://kit.fontawesome.com/0ac7927128.js" crossorigin="anonymous"></script>
+    
+    <style type="text/css">
+      
+      body {
+        background-color:#e3e3e3;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        margin: 0;     
+      }
+        
+       
+
+        nav {
+          position: fixed;
+          z-index: 3;
+      }
+
+
+        header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+          background-color: rgba(21, 102, 89, 0.295);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding:0px 0px 5px 5px;
+      }
+
+        header nav ul {
+          display: flex;
+          list-style-type: none;
+          margin-top:390px;
+          padding: 0;
+      }
+
+
+        header nav ul li a {
+          color: whitesmoke;
+          text-decoration: none;
+      }
+
+        header nav ul li a:hover {
+          text-decoration: underline;
+      }
+
+
+      .imgLogo{
+        width: 100%;
+        background-color: whitesmoke;
+        padding: auto;
+      }
+
+
+        header img {
+          width: 100px;
+          height: 100px;
+          margin-left: 50px;
+          border-radius: 50%; 
+          padding-top: 2px;
+      }
+
+
+        header ul {
+          display: flex;
+          flex-direction: column;     
+          width:100px;
+          list-style: none;
+          margin: 0px 0px 0px -30px;
+          z-index:1;
+       }
+
+
+        header li {
+          background-color: rgb(35, 99, 99);
+          text-align: auto;
+          font-weight: bolder;
+          font-size: 14px;
+          cursor: pointer;
+          padding: 10px 50px;
+          border-radius: 5px;
+          line-height: 50px;
+          margin-left: 0px;
+          border: 1px solid rgb(35, 92, 78);
+          border-spacing: 10px;
+          width:fit-content ;
+          z-index: 99;
+      }
+
+        header li:hover {
+          background-color: rgb(24, 158, 125);
+          color: rgb(255, 215, 0);
+      }
+
+        header a{
+          text-decoration: none;
+          color: whitesmoke;
+        }
+      
+
+        .hero {
+          width: 450px;
+          height: 100vh;
+          background-size: contain;
+          transform:rotateY(180deg);
+          align-items: right;
+          background-color: rgb(255, 215, 0);
+          margin-left:200px;
+          z-index: -1;
+          position: sticky;
+          top:88px;
+      }
+
+
+        .herobackground{
+          width:100%;
+          height:800px;
+          background-color: rgba(206, 180, 182, 0.836);
+          position:fixed;
+          top:0px;
+          z-index:-4;
+      }
+
+
+      .main {
+          height:250px;
+          width: 100%;
+          background-color: rgba(21, 102, 89, 0.295);
+          position:absolute;
+          margin-top:-215px;
+          text-align: center; 
+          color: rgb(255, 255, 255);
+          font-style: italic;
+          font-size: 30px; 
+          line-height: 18px;
+          word-spacing: 0px;
+          
+      } 
+
+        .main h1 {
+          color: rgb(255, 255, 255);
+          text-align: center;
+          font-size: 35px;
+          margin-top: 30px;
+          padding: auto;
+        
+      }
+
+
+        .main h1 span, .main p span {
+          text-decoration: underline solid rgb(24, 158, 125);
+          font-style:italic;
+          color: rgb(255, 215, 0);
+      }
+
+
+        .main input {
+          background-color: rgb(35, 99, 99);
+          color: rgb(255, 215, 0);
+          font-size: 20px;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-align: center;
+      }
+      
+
+        .main a {
+          color: rgb(255, 215, 0);
+          text-decoration: none;
+      }
+
+      .mainp {
+        width:690px;
+        margin:auto;
+        line-height: 40px;
+        font-size:25px;
+      }
+
+        .about, .contact, .projects {
+          background-color: whitesmoke;
+          width: 800px;
+          height: fit-content;
+          margin-left: 500px;
+          margin-top: 150px;
+          margin-bottom: 150px;
+          border-radius: 8px;
+          color: rgb(35, 99, 99);
+          border-radius: 30px;
+      }
+
+        .about p, .contact p, .projects p {
+          font-size: 15px;
+          padding:10px;
+          line-height: 1.5;
+          color: rgb(35, 99, 99);
+          text-align: center;
+      }
+
+
+       .about h2, .contact h2, .projects h2 {
+          background-color: rgb(35, 99, 99);
+          color: rgb(255, 215, 0);
+          text-align: center;
+          padding: 20px 20px 20px 20px;
+      }
+
+
+        .about a, .contact a, .projects a {
+          color: rgb(35, 99, 99);
+          text-decoration: none;
+      }
+
+
+        .about a:hover, .contact a:hover, .projects a:hover {
+          background-color: rgb(24, 158, 125);
+          color: rgb(255, 215, 0);
+          text-decoration: underline;
+      }
+
+      footer {
+        width:100%;
+        height: 200px;
+        padding-top:20px;
+        background-color:rgb(35, 99, 99);
+        text-align: center;
+      }
+
+			
+			footer p{
+				
+				font-size:11.5px;
+				
+				color:whitesmoke;
+			}
+			
+		
+			.footer_icons{
+        display: flex;
+        flex-direction: inline;
+				text-align: center;
+				gap:20px;
+				margin-top:30px;
+        padding-left:auto;
+        color: whitesmoke;
+        width:100%;
+        justify-content: center;
+        height: 100px;
+      }
+
+      .footer i:hover {
+          background-color: rgb(24, 158, 125);
+          color: rgb(255, 215, 0);
+      }
+
+      .facebook :hover, .twitter :hover, .email :hover , .instagram :hover, .github :hover {
+
+          background-color: rgb(24, 158, 125);
+          color: rgb(255, 215, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+
+
+    
+    <header>
+        <div class="imgLogo">
+          <img src="THR Logo.jpg" alt="THR Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href=""> HOME </a></li>
+            <li><a href="" > ABOUT </a></li>
+            <li><a href="" > CONTACT </a></li>
+            <li><a href=""> PROJECTS </a></li>
+          </ul>
+        </nav>
+    </header>
+
+            <div class="hero">
+                <img src="MicHalf.jpg" alt="hero" />
+            </div>
+            <div class="herobackground"></div>
+   
+
+
+            <div class="main">
+              
+              <h1>  Hi, my name is <span>Micheal Adetayo</span> </h1>
+
+              <div class="mainp">
+                  <p> I am an <span>IT Specialist</span> in technical gadgets repairs and a creative <span>Web Developer.</span> </p>
+              </div>
+              
+              <input type="button" id="mainCTA" value="Let's Connect" onclick="window.location.href='mailto:micealad@gmail.com'" /> 
+            </div>
+
+
+          <section>  
+              
+              <div class="about">
+                <h2>About Me</h2>
+                
+                <p>I'm Micheal Adetayo, a website designer, currently based in Port Harcourt. </p>
+                <p> I am a passionate developer with a keen interest in technology and repairs.  </p>
+                <p>I use the power of codes to transform ideas into tools that solve real problems-whether in business, education, 
+                  family, or everyday life. My goal is to help people turn their visions into practical solutions that improve both 
+                  personal outcomes and broader social conditions. I am driven by curiosity and a deep desire to build things that matter.
+                  I am a self-motivated individual with a passion for continuous learning. I thrive in collaborative environments and enjoy 
+                  working with teams to bring innovative ideas to life.</p>
+                <p>I poses good knowledge in HTML and CSS which are fundamental in website creation. 
+                    A website is a very important asset that goes a long way in clients judgement of credibility.
+                    My goal is to create visually appealing and user-friendly websites that not only meet the needs of clients but also provide an 
+                    exceptional user experience. 
+                    I believe that a well-designed website can significantly enhance a brand's online presence and contribute to its success.</p>
+                <p>With a strong attention to detail and a commitment to delivering high-quality work, I strive to exceed client expectations and 
+                    create websites that are not only functional but also aesthetically pleasing.
+                    Let's work together to give your brand the website befitting it and watch your business rank higher.</p>
+              </div>
+
+              <div class="contact">
+                <h2>Contact</h2>
+                <p> You can reach me through these channels: </p>
+                <p><a href="mailto:micealad@gmail.com">micealad@gmail.com</a></p>
+                <p><a href="mailto:micealad@gmail.com">micheal.adetayo@yahoo.com</a></p>
+                <p>+2348169835986</p>
+              </div>
+
+
+              <div class="projects">
+                <h2>Projects</h2>
+                <p> Check out my projects on GitHub: <a href="https://github.com/Mic2reach2">Mic2reach2</a></p>
+              </div>
+
+          </section>
+          
+      <footer>
+			
+				<div class="footer_icons">
+					
+          <div class=twitter>
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <p>@TrustedHandsRps</p>
+          </div>
+					
+					<div class="facebook">
+            <i class="fa-brands fa-facebook-f fa-lg"></i>
+            <p>@TrustedHandsRepairs</p>
+          </div>
+
+					<div class="github">
+            <i class="fa-brands fa-github fa-lg"></i>
+            <p>@Mic2reach2</p>  
+          </div>
+					
+					<div class="Instagram">
+            <i class="fa-brands fa-instagram fa-lg" alt="Instagram"></i>
+            <p>@TrustedHandsRepairs</p>
+          </div>
+          
+					
+					<div class="email">
+            <i class="fa-solid fa-envelope fa-lg" alt="email"></i>
+            <p>micealad@gmail.com</p>
+				  </div>
+				</div>
+
+				  <p>All rights reserved. &copy 2025 Micheal Adetayo.
+				  </p>
+      
+			</footer>
+  </body>
+
+</html>
